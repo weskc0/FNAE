@@ -7,7 +7,7 @@ class EnemyAI {
         // Epstein AI配置（按夜数）
         this.epsteinConfig = {
             1: {
-                aiLevel: 12,              // AI等级 (0-20)，12/20 = 60%移动概率
+                aiLevel: 6,              // AI等级 (0-20)，12/20 = 60%移动概率
                 movementInterval: [9000, 10000],  // 移动检查间隔（毫秒）[最小值, 最大值]
                 movementDuration: 1000,   // 移动动画时长（毫秒）
                 spawnDelay: 120000,        // 出场延迟（毫秒）
@@ -19,7 +19,7 @@ class EnemyAI {
                 soundLureResistance: 0  // 对sound吸引的抵抗概率（0-1）
             },
             2: {
-                aiLevel: 12,
+                aiLevel: 8,
                 movementInterval: [9000, 10000],
                 movementDuration: 1000,
                 spawnDelay: 0,
@@ -31,7 +31,7 @@ class EnemyAI {
                 soundLureResistance: 0.1
             },
             3: {
-                aiLevel: 12,
+                aiLevel: 10,
                 movementInterval: [9000, 10000],
                 movementDuration: 1000,
                 spawnDelay: 0,
@@ -55,7 +55,7 @@ class EnemyAI {
                 soundLureResistance: 0.15
             },
             5: {
-                aiLevel: 12,
+                aiLevel: 14,
                 movementInterval: [9000, 10000],    // Night 5：9-10秒间隔
                 movementDuration: 1000,
                 spawnDelay: 0,
@@ -67,7 +67,7 @@ class EnemyAI {
                 soundLureResistance: 0.15
             },
             6: {
-                aiLevel: 12,
+                aiLevel: 16,
                 movementInterval: [6500, 7500],  // 6.5-7.5秒间隔
                 movementDuration: 1000,
                 spawnDelay: 0,  // Night 6立即出场
@@ -83,7 +83,7 @@ class EnemyAI {
         // Trump AI配置（按夜数，Night 2开始）
         this.trumpConfig = {
             2: {
-                aiLevel: 10,              // AI等级，10/20 = 50%移动概率
+                aiLevel: 4,              // AI等级，10/20 = 50%移动概率
                 movementInterval: [8000, 9000],  // 8-9秒随机（比EP快一点）
                 movementDuration: 1000,   // 移动动画时长（毫秒）
                 spawnDelay: 0,            // 出场延迟（毫秒），开局就出场
@@ -103,7 +103,7 @@ class EnemyAI {
                 }
             },
             3: {
-                aiLevel: 13,              // 65%移动概率
+                aiLevel: 6,              // 65%移动概率
                 movementInterval: [8000, 9000],  // 8-9秒随机（比EP快一点）
                 movementDuration: 1000,
                 spawnDelay: 0,
@@ -123,7 +123,7 @@ class EnemyAI {
                 }
             },
             4: {
-                aiLevel: 13,
+                aiLevel: 8,
                 movementInterval: [8000, 9000],    // 8-9秒随机（比EP快）
                 movementDuration: 1000,
                 spawnDelay: 0,
@@ -143,7 +143,7 @@ class EnemyAI {
                 }
             },
             5: {
-                aiLevel: 13,
+                aiLevel: 10,
                 movementInterval: [8000, 9000],    // 8-9秒随机（比EP快）
                 movementDuration: 1000,
                 spawnDelay: 0,
